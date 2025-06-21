@@ -88,7 +88,7 @@ A typical deployment has:
          /       \                  /    \                     /     \
    BLS R0.1   BLS R0.2         BLS R1.1  BLS R1.2         BLS R2.1  BLS R2.2
 ```
-
+![FlexiRaft Replication Layout](/assets/img/Replication.png)
 
 - R0 sends binlog data to BLS R0.1 and R0.2 (semi-sync).
 - Secondaries (R1, R2) replicate asynchronously.
