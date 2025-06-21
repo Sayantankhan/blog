@@ -52,8 +52,6 @@ Raft provides strong leader semantics and a clean model for replication. However
 
 ## 📦 Architecture Overview
 
-![FlexiRaft Replication Layout](/mnt/data/Screenshot_2024-02-08_at_1.01.56_PM.png)
-
 Each region consists of:
 - One **MySQL replica** (R0, R1, R2).
 - Two **binlog servers** (BLS).
