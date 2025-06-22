@@ -277,14 +277,11 @@ For example we pass block IO through to the Linux kernel, depend on Linux’s pr
 between VMs in CPU and memory, and we use TUN/TAP virtual network interfaces
 
 It has been choose for two reasons
-    - One was implementation cost: high-quality operating system components, such as schedulers, can take decades to get right, especially when they need to deal 
-        with multi-tenant workloads on multi-processor machines
+- One was implementation cost: high-quality operating system components, such as schedulers, can take decades to get right, especially when they need to deal with multi-tenant workloads on multi-processor machines
     
-    - The other reason was operational knowledge: within AWS, operators are highly experienced at operating, automating, optimizing Linux systems
-    Using KVM in Linux, along with the standard Linux programming model, allows our operators to use most of the
-tools they already know when operating and troubleshooting Firecracker hosts and guests.
-For example, running ps on a Firecracker host will include all the MicroVMs on the host in the process list, and tools like top, vmstat and even kill work
-as operators expect. 
+- The other reason was operational knowledge: within AWS, operators are highly experienced at operating, automating, optimizing Linux systems
+
+For example, running ps on a Firecracker host will include all the MicroVMs on the host in the process list, and tools like top, vmstat and even kill work as operators expect. 
 
 ###  Jailer
 - Firecracker’s jailer implements an additional level of protection against unwanted VMM behavior
