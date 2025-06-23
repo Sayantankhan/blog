@@ -29,6 +29,7 @@ To tackle this, **Distributed TensorFlow** supports multiple transport channels 
 | gRPC + Verbs     | RDMA for Tensor transfers; gRPC for Others                      |
 | gRPC + MPI       | MPI for Tensor transfers                                        |
 | AR-gRPC          | Native RDMA; Adaptive Communication for Tensor Demands          |
+
 ---
 
 ## 💡 Motivation
