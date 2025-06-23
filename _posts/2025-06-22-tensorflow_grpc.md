@@ -288,7 +288,7 @@ The `RDMA-Endpoint` extends the default `Endpoint` abstraction defined in gRPC t
 This modular design allows RDMA-based communication to be integrated into existing systems without altering the upper application layers.
 
 
-![Communication Flew](/assets/img/communication_flow.png)
+![Communication Flew](/assets/img/grpc_and_communication.png)
 
 ### ✉️ RDMA-Endpoint-Write
 
