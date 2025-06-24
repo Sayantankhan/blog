@@ -1,0 +1,44 @@
+[
+  {
+    "title": "Backpropagation, Softmax, Cross-Entropy, and the Chain Rule — Explained with Equations",
+    "url": "/blog/posts/backward_propagation/",
+    "categories": "",
+    "tags": "neural-networks, deep-learning, backpropagation, softmax, cross-entropy",
+    "date": "2025-06-24 00:00:00 +0000",
+    "content": "Ever since nonlinear recursive functions (i.e., artificial neural networks) were introduced to the world of machine learning, the range of applications — from chatbots to image generators — has exp..."
+  },
+  {
+    "title": "🚀 Accelerating TensorFlow with Adaptive RDMA ⚡️: Supercharging gRPC Performance 🔗",
+    "url": "/blog/posts/tensorflow_grpc/",
+    "categories": "hpc, rdma",
+    "tags": "rdma, tensorflow, gRPC, mpi, hpc",
+    "date": "2025-06-23 04:30:00 +0000",
+    "content": "🧠 This blog post is evolved from the key insights presented in the paper Characterizing and Optimizing Distributed Deep Learning Training on Modern GPU Clusters. The original work deeply analyzes t..."
+  },
+  {
+    "title": "🔥 Firecracker: The Lightweight Guard of Serverless Computing",
+    "url": "/blog/posts/firecracker-vm/",
+    "categories": "vm",
+    "tags": "vm, serverless computing, aws, lambda, little's law",
+    "date": "2025-06-20 04:30:00 +0000",
+    "content": "In the world of virtualization, we’re often caught between two extremes:     🛡️ Virtual Machines (VMs): Offer strong isolation and security—but come with significant overhead.   ⚡ Containers: Light..."
+  },
+  {
+    "title": "High Availability Demo 🚀 Pacemaker + Corosync + Docker",
+    "url": "/blog/posts/ha-cluster/",
+    "categories": "",
+    "tags": "ha, pacemaker, corosync, docker, clustering",
+    "date": "2025-06-20 04:30:00 +0000",
+    "content": "Setting up high availability (HA) can feel overwhelming, but tools like Pacemaker, Corosync, and Docker make it surprisingly approachable. In this post, I’ll walk through how I built a multi-node H..."
+  },
+  {
+    "title": "FlexiRaft: Flexible Quorums with Raft in MySQL",
+    "url": "/blog/posts/flexi-raft/",
+    "categories": "Systems, consensus, distributed-systems",
+    "tags": "raft, mysql, flexiquorum, distributed-systems, consensus",
+    "date": "2025-06-20 00:00:00 +0000",
+    "content": "In large-scale distributed environments like Meta, MySQL remains the most widely deployed transactional datastore, managing petabytes of data. Ensuring low latency, high availability, and strong co..."
+  }
+  
+]
+

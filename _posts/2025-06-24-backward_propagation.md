@@ -3,6 +3,7 @@ layout: post
 title: "Backpropagation, Softmax, Cross-Entropy, and the Chain Rule — Explained with Equations"
 date: 2025-06-24
 tags: [neural-networks, deep-learning, backpropagation, softmax, cross-entropy]
+math: true
 ---
 Ever since nonlinear recursive functions (i.e., artificial neural networks) were introduced to the world of machine learning, the range of applications — from chatbots to image generators — has exploded.
 
@@ -339,6 +340,7 @@ $$
 Where:
 - $W \in \mathbb{R}^{K \times d}$ is the weight matrix from input to logits  
 - $(\hat{y} - y)$ is the prediction error vector
+
 ---
 
 ## 📌 Summary
@@ -357,8 +359,7 @@ Where:
 - Softmax transforms logits to probabilities
 - Cross-entropy penalizes confident wrong predictions
 - The chain rule enables gradient flow through all layers
-- The combined gradient simplifies beautifully to:  
-  $$\boxed{\hat{y}_k - y_k}$$
+- The combined gradient simplifies beautifully to:  $$\boxed{\hat{y}_k - y_k}$$
 
 This efficient gradient powers the entire backpropagation algorithm in modern deep learning frameworks.
 

@@ -105,6 +105,14 @@ social_preview_image: # string, local or CORS resources
 # boolean type, the global switch for TOC in posts.
 toc: true
 
+markdown: kramdown
+
+kramdown:
+  math_engine: mathjax
+
+# Chirpy-specific config
+katex: false  # set this to true ONLY if you're using KaTeX instead of MathJax
+
 comments:
   # Global switch for the post-comment system. Keeping it empty means disabled.
   provider: # [disqus | utterances | giscus]
