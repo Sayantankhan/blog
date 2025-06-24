@@ -98,7 +98,9 @@ $$
 
 Let:
 - $z_i = \text{logit for class } i$
-- $\hat{y}_i = \frac{e^{z_i}}{\sum_{j=1}^n e^{z_j}}$ — softmax output
+- $$
+\hat{y}_i = \frac{e^{z_i}}{\sum_{j=1}^n e^{z_j}}
+$$ — softmax output
 - $L = -\log(\hat{y}_c)$ — cross-entropy loss for class $c$
 - $x \in \mathbb{R}^d$, input vector
 
