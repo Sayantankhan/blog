@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Backpropagation, Softmax, Cross-Entropy, and the Chain Rule — Explained with Equations"
+title: "How Neural Networks Learn: A Deep Dive into Backpropagation"
 date: 2025-06-24
 tags: [neural-networks, deep-learning, backpropagation, softmax, cross-entropy]
 math: true
