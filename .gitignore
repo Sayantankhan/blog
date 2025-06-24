@@ -1,2 +1,26 @@
-.jekyll-cache
+# Ignore Jekyll site build output
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# Ignore log files and temp files
+*.log
+*.tmp
+*.swp
+*.bak
+*.DS_Store
+*.sass-cache
+
+# Ignore dependencies
+node_modules/
+vendor/bundle/
+.bundle/
+Gemfile.lock
+
+# Ignore system files
+*.class
+.idea/
+.vscode/
+*.iml.jekyll-cache
 .DS_Store
