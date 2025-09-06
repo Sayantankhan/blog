@@ -139,7 +139,7 @@ $\theta_j := \theta_j - α\frac{\partial J(\theta)}{\partial \theta_j}$
 = $\theta_j - α ⋅ \Big (h_\theta(x) - y \Big) ⋅ x_j$
 
 
-taking for m training example = $\theta_j - α ⋅ \Big (∑i_1^m  h_\theta(x^i) - y^i \Big) ⋅ x_j^i$
+taking for m training example = $\theta_j - α ⋅ \Big (\sum_{i=1}^{m}  h_\theta(x^i) - y^i \Big) ⋅ x_j^i$
 
 $x^i$ -> ith trainig example
 
@@ -168,7 +168,7 @@ A common approach is to **start with $\alpha = 0.01$** and calibrate this value 
 
 This is also known as **Batch Gradient Desecnt**
 
-the problem with this approach is in order to make one update to parameter (in order to even take a single step of gradient descent) we need to calculate the sum - ∑i_1^m
+the problem with this approach is in order to make one update to parameter (in order to even take a single step of gradient descent) we need to calculate the sum - $\sum_{i=1}^{m}$
 
 If m is huge, mean a huge dataset, we need scan through entire dataset , we have to calculate it for all the m - which is going to be pretty slow and expensive
 
