@@ -352,7 +352,7 @@ try {
 }
 ```
 
-## 💡 Optimistic Locking — a non-blocking approach
+## 3. 💡 Optimistic Locking — a non-blocking approach
 
 Optimistic locking assumes **conflicts are rare** and avoids taking locks up-front.  
 
