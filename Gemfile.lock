@@ -201,6 +201,7 @@ PLATFORMS
 
 DEPENDENCIES
   html-proofer (~> 5.0)
+  jekyll-sitemap
   jekyll-theme-chirpy (~> 7.3)
   tzinfo (>= 1, < 3)
   tzinfo-data
