@@ -44,6 +44,14 @@ jobs:
         with:
           ruby-version: 3.3
           bundler-cache: true
+      
+      - name: Install gems (bundle install)
+        # explicit install step (bundler-cache still present in setup-ruby)
+        run: |
+          set -e
+          bundle config set --local deployment 'false'
+          bundle config set --local without 'development'
+          bundle install --jobs 4 --retry 3
 
       - name: Build site
         run: bundle exec jekyll b -d "_site${{ steps.pages.outputs.base_path }}"
