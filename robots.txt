@@ -1,0 +1,5 @@
+User-agent: *
+Disallow:
+
+Sitemap: {{ site.url | append: site.baseurl | append: "/sitemap.xml" }}
+Host: {{ site.url }}

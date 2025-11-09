@@ -53,10 +53,13 @@ webmaster_verifications:
 # ↑ --------------------------
 # The end of `jekyll-seo-tag` settings
 
+plugins:
+  - jekyll-sitemap
+
 # Web Analytics Settings
 analytics:
   google:
-    id: # fill in your Google Analytics ID
+    id: "G-6XL1N82RS0"
   goatcounter:
     id: # fill in your GoatCounter ID
   umami:
