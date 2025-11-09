@@ -393,11 +393,13 @@ WHERE o.id = 42
   AND NOT EXISTS (SELECT 1 FROM u);
 ```
 ##### Example output (when update succeeds and version was 7):
+
 | result  | id | amount | status | version |
 | ------- | -- | ------ | ------ | ------- |
 | updated | 42 | 120.00 | OPEN   | 8       |
 
 ##### Example output (when version = 8):
+
 | result   | id | amount | status | version |
 | -------- | -- | ------ | ------ | ------- |
 | conflict | 42 | 100.00 | OPEN   | 8       |
