@@ -379,10 +379,29 @@ CREATE TABLE orders (
 SELECT amount, status, version FROM orders WHERE id = 42;
 
 -- attempt update using optimistic check
-UPDATE orders
-SET amount = 120.00, version = version + 1
-WHERE id = 42 AND version = 7;  -- 7 is the version read earlier
+WITH u AS (
+  UPDATE orders
+  SET amount = 120.00, version = version + 1
+  WHERE id = 42 AND version = 7
+  RETURNING id, amount, status, version
+)
+SELECT 'updated'   AS result, u.id, u.amount, u.status, u.version FROM u
+UNION ALL
+SELECT 'conflict'  AS result, o.id, o.amount, o.status, o.version
+FROM orders o
+WHERE o.id = 42
+  AND NOT EXISTS (SELECT 1 FROM u);
 ```
+##### Example output (when update succeeds and version was 7):
+| result  | id | amount | status | version |
+| ------- | -- | ------ | ------ | ------- |
+| updated | 42 | 120.00 | OPEN   | 8       |
+
+##### Example output (when version = 8):
+| result   | id | amount | status | version |
+| -------- | -- | ------ | ------ | ------- |
+| conflict | 42 | 100.00 | OPEN   | 8       |
+
 
 ### ⚠️ Conflict Handling in Optimistic Locking
 In optimistic locking, we accept the risk that **conflicts can occur** — two or more writers may modify the same record concurrently before realizing it. Unlike pessimistic locks that block other writers upfront, optimistic systems detect conflicts **after the fact**, during the commit or merge phase.
