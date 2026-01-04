@@ -170,7 +170,9 @@ The controller is responsible for:
 - Informing other brokers about leadership changes
 
 Here, we have spinned up 3 kafka brokers and during the boot up they got registered with zookeeper 
+
 > /brokers/ids/{broker_id}
+
 ```json
 /brokers/ids/1
 {"features":{},"listener_security_protocol_map":{"INTERNAL":"PLAINTEXT","EXTERNAL":"PLAINTEXT"},"endpoints":["INTERNAL://kafka1:29092","EXTERNAL://localhost:9092"],"jmx_port":-1,"port":29092,"host":"kafka1","version":5,"timestamp":"1767512418493"}
