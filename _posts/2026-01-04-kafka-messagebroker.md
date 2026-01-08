@@ -199,7 +199,7 @@ This node is created as an ephemeral znode.
 
 #### Partition Leader Election
 For every partition, Kafka stores leadership metadata in ZooKeeper:
-> /brokers/topics/<topic>/partitions/<partition>/state
+> /brokers/topics/{topic}/partitions/{partition}/state
 
 ![](/assets/img/kafka-zoo-topic-state.png)
 ![](/assets/img/kafka-zoo-topic-partition-state.png)
