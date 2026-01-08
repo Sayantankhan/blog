@@ -159,7 +159,7 @@ Before KRaft, Apache Kafka relied on Apache ZooKeeper for cluster coordination a
 
 ![](/assets/img/kafka-replication.png)
 
-#### 1️⃣ There Is Only ONE Controller
+#### There Is Only ONE Controller
 
 Although Kafka has many brokers, only one broker acts as the controller at any given time.
 
