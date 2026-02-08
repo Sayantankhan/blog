@@ -3,6 +3,7 @@ layout: post
 title: "Understanding Page Tables, Virtual Memory, MMU, TLB, and IOMMU"
 date: 2025-06-30
 tags: ["os", "virtual-memory", "mmu", "iommu", "linux"]
+math: true
 ---
 Modern operating systems give every process the illusion that it owns a large, private, contiguous memory space. In reality, physical memory (RAM) is shared, fragmented, and limited. The magic that makes this illusion possible is virtual memory, backed by page tables, enforced by the MMU, accelerated by the TLB, and extended to devices using IOMMU.
 
@@ -77,6 +78,7 @@ At a high level, permission bits answer these questions:
 - Can it be shared safely?
 
 These bits are enforced in hardware by the MMU, not by the OS after the fact.
+
 | Permission | Meaning                   |
 | ---------- | ------------------------- |
 | **R**      | Read allowed              |
@@ -86,6 +88,7 @@ These bits are enforced in hardware by the MMU, not by the OS after the fact.
 
 ##### x86-64 Page Table Permission Bits
 A typical x86-64 PTE contains (simplified):
+
 | Bit    | Name                     | Meaning                            |
 | ------ | ------------------------ | ---------------------------------- |
 | Bit 0  | **P (Present)**          | Page exists in RAM                 |
